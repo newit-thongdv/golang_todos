@@ -9,11 +9,12 @@ import (
 
 type User struct {
 	gorm.Model
-	Name      string     `json:"name"`
-	Email     string     `json:"email" gorm:"unique"`
-	Password  string     `json:"password"`
-	CreatedAt *time.Time `json:"created_at"`
-	UpdatedAt *time.Time `json:"updated_at"`
+	Name         string     `json:"name"`
+	Email        string     `json:"email" gorm:"unique"`
+	Password     string     `json:"password"`
+	RefreshToken string     `json:"refresh_token"`
+	CreatedAt    *time.Time `json:"created_at"`
+	UpdatedAt    *time.Time `json:"updated_at"`
 }
 
 func (user *User) HashPassword(password string) error {
