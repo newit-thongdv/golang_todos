@@ -1,7 +1,6 @@
-API : /api/user/register
-Params :
-{
-    "name": "ThongDV",
-    "email": "thongdv@newit.co.jp",
-    "password": "admin@123"
-}
+# Implementing Authentication
+API:
+
+- Register (/api/user/register)
+- Login (/api/login)
+- Refresh Token (/api/refresh-token)
